@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    let number = prompt('nhap vao mot so: ')
+    // let Arr = []
+
+    function Check() {
+        if (number == 2 || number == 3) {
+            alert(number + ' :la mot so nguyen to')
+        } else {
+            for (let i = 2; i < number; i++) {
+                let a = number % i
+                if (a == 0) {
+                    alert(number + ' :khong phai so mot so nguyen to.')
+                    break
+                } else {
+                    alert(number + ' :la mot so nguyen to')
+                    break
+                }
+                // Arr.push(a)
+                // console.log(Arr)
+            }
+        }
+    }
+
+    Check()
+</script>
+
+</html>
